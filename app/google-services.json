@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1073317377996",
+    "firebase_url": "https://chatapp-9f862-default-rtdb.firebaseio.com",
+    "project_id": "chatapp-9f862",
+    "storage_bucket": "chatapp-9f862.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073317377996:android:c241e842324f2ef2870f69",
+        "android_client_info": {
+          "package_name": "com.nisaefendioglu.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073317377996-cafh5tnaa07no96eta43ao598puu8p11.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC1pnown7KH4SIOix7LKAFZzthK2XvPYMU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073317377996-cafh5tnaa07no96eta43ao598puu8p11.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
