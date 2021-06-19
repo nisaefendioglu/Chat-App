@@ -35,11 +35,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        username = getIntent().getExtras().getString("kullaniciAdi"); //kullanıcı adını alır.
+        username = getIntent().getExtras().getString("UserName"); //kullanıcı adını alır.
         firebaseDatabase = FirebaseDatabase.getInstance();
         reference = firebaseDatabase.getReference();
         list = new ArrayList<>();
-        userList = (RecyclerView)findViewById(R.id.userListe);
+        userList = (RecyclerView)findViewById(R.id.userList);
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(MainActivity.this,2); //1 satırda 2 kullanıcı
         userList.setLayoutManager(layoutManager);
         userAdapter = new UserAdapter(MainActivity.this,list,MainActivity.this, username);
@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void list (){
-        reference.child("Kullanicilar").addChildEventListener(new ChildEventListener() { //tüm verileri gösterir.
+        reference.child("Users").addChildEventListener(new ChildEventListener() { //tüm verileri gösterir.
             @Override
             public void onChildAdded(@NonNull  DataSnapshot snapshot, @Nullable  String previousChildName) {
                 //Log.i("Kullanıcı :" , snapshot.getKey()); //kullanıcıları log kısmında görüntüler.

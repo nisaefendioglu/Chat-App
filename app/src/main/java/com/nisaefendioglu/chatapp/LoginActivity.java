@@ -45,14 +45,14 @@ public class LoginActivity extends AppCompatActivity {
 
     public void userAdd(final String userName){
         //kullanici kayit ve giris islemleri
-        reference.child("Kullanicilar").child(userName).child("kullaniciAdi").setValue(userName).addOnCompleteListener(new OnCompleteListener<Void>() {
+        reference.child("Users").child(userName).child("UserName").setValue(userName).addOnCompleteListener(new OnCompleteListener<Void>() {
             @Override
             public void onComplete(@NonNull Task<Void> task) {
                 if(task.isSuccessful()){
 
                     Toast.makeText(getApplicationContext(), "Kayıt işleminiz tamamlandı." , Toast.LENGTH_LONG).show(); //kayıt işleminin başarıyla tamamlanması durumunda ekrana verilecek yazı.
                     Intent intent = new Intent(LoginActivity.this, MainActivity.class); //main sayfasına geçiş
-                    intent.putExtra("kullaniciAdi", userName); //kullanıcı adını main sayfasına gönderme işlemi
+                    intent.putExtra("UserName", userName); //kullanıcı adını main sayfasına gönderme işlemi
                     startActivity(intent); //geçişi başlatmak için.
 
                 }
