@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         reference = firebaseDatabase.getReference();
         list = new ArrayList<>();
         userList = (RecyclerView)findViewById(R.id.userList);
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(MainActivity.this,2); //1 satırda 2 kullanıcı
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(MainActivity.this,1); //1 satırda 1 kullanıcı
         userList.setLayoutManager(layoutManager);
         userAdapter = new UserAdapter(MainActivity.this,list,MainActivity.this, username);
         userList.setAdapter(userAdapter);

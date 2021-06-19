@@ -7,15 +7,17 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="match_parent"
+        android:layout_width="203dp"
         android:layout_height="wrap_content"
-        android:text="mesaj asdasfassddfsdf sdsd"
-        android:padding="13dp"
-        android:layout_marginTop="20dp"
+        android:text=""
+        android:padding="15dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/white"
         android:id="@+id/receivedView"
-        android:background="#ffd32a"
+        android:background="@drawable/received_circle_drawable"
         android:layout_marginBottom="8dp"
-        android:layout_marginRight="150dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="180dp"
         />
 
 
