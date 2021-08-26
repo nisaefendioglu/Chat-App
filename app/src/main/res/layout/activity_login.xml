@@ -22,7 +22,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="1dp"
-        android:hint="Kullanıcı Adınızı Giriniz:"
+        android:hint="Login with your email:"
         android:textColorHint="#000000"
         android:textColor="#000000"/>
 
@@ -33,7 +33,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="50dp"
         android:textColor="@color/black"
-        android:text="Giriş Yap"
+        android:text="Login"
         app:backgroundTint="#5ddefb" />
 
 
