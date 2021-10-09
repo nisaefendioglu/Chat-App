@@ -7,6 +7,10 @@ Screenshots of the app :
 <br><br><br>
 ![Adsız](https://user-images.githubusercontent.com/48391281/130981215-a2e1174a-3258-4304-b31c-f58ad718c428.png)
 
+## Demo Application
+
+[![Get it on Google Play](https://play.google.com/store/apps/details?id=com.nisaefendioglu.chatapp&gl=TR)
+
 ## License
 ```
 
